@@ -1,0 +1,29 @@
+﻿@model WebTrainingTemplate.Web.ViewModels.EntityDetailsViewModel
+@{
+    ViewData["Title"] = "Entity Details";
+}
+
+<div class="card card-info border-dark">
+    <div class="card-header bg-dark text-white text-uppercase">
+        @*<h1>@Model.Employee.FirstName @Model.Employee.LastName</h1>*@
+    </div>
+    <div class="card-body bg-light">
+        @*<div class="row">
+            <div class="col-md">
+                <h4>Personal information</h4>
+                <hr />
+                <p><strong>Email</strong>: @Model.Employee.Email</p>
+                <p><strong>Phone Number</strong>: @Model.Employee.PhoneNumber</p>
+                <p><strong>Address</strong>: @Model.Employee.Address, @Model.Employee.City, @Model.Employee.Country</p>
+            </div>
+            <div class="col-md">
+                <h4>Professional information</h4>
+                <hr />
+                <p><strong>Job Title</strong>: @Model.Employee.JobTitle</p>
+                <p><strong>Experience</strong>: @Model.Employee.Experience</p>
+            </div>
+        </div>*@
+    </div>
+</div>
+<hr />
+<a class="btn btn-dark" asp-controller="Entity" asp-action="Update" asp-route-id="@Model.Entity.EntityId">Edit</a>

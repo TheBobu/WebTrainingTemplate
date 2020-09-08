@@ -1,0 +1,61 @@
+﻿@model WebTrainingTemplate.Web.ViewModels.EntityCreateViewModel
+@{
+    ViewData["Title"] = "Create Entity";
+}
+
+<h2>Add a new Entity</h2>
+
+<div class="panel panel-default">
+    <form asp-action="Insert" method="post" class="bold-form">
+        @*<div class="form-group">
+            <label asp-for="@Model.Employee.FirstName" class="control-label"></label>
+            <input asp-for="@Model.Employee.FirstName" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.FirstName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.LastName" class="control-label"></label>
+            <input asp-for="@Model.Employee.LastName" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.LastName"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.Email" class="control-label"></label>
+            <input asp-for="@Model.Employee.Email" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.Email"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.PhoneNumber" class="control-label"></label>
+            <input asp-for="@Model.Employee.PhoneNumber" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.PhoneNumber"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.Address" class="control-label"></label>
+            <input asp-for="@Model.Employee.Address" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.Address"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.City" class="control-label"></label>
+            <input asp-for="@Model.Employee.City" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.City"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.Country" class="control-label"></label>
+            <input asp-for="@Model.Employee.Country" class="form-control" />
+            <span class="text-danger" asp-validation-for="@Model.Employee.Country"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.JobTitle" class="control-label"></label>
+            <select asp-for="@Model.Employee.JobTitle" asp-items="@Model.JobTitles" class="form-control"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Employee.Experience" class="control-label"></label>
+            <select asp-for="@Model.Employee.Experience" asp-items="@Model.ExperienceLevels" class="form-control"></select>
+        </div>*@
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScripts" />
+}
