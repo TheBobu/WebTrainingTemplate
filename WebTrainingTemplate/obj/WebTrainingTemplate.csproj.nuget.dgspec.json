@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {}
+    "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {}
   },
   "projects": {
-    "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {
+    "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
+        "projectUniqueName": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
         "projectName": "WebTrainingTemplate",
-        "projectPath": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
-        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\obj\\",
+        "projectPath": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
+        "packagesPath": "C:\\Users\\Ionela\\.nuget\\packages\\",
+        "outputPath": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Ionela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
