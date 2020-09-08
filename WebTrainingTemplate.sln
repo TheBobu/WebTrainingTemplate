@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrainingTemplate", "WebTrainingTemplate\WebTrainingTemplate.csproj", "{38F3E8CD-61AE-4AB8-B1C6-F385E62C4550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate", "WebTrainingTemplate\WebTrainingTemplate.csproj", "{38F3E8CD-61AE-4AB8-B1C6-F385E62C4550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrainingTemplate.Data", "WebTrainingTemplate.Data\WebTrainingTemplate.Data.csproj", "{203925A5-AD45-48AB-A5E4-6A4DC410476D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate.Data", "WebTrainingTemplate.Data\WebTrainingTemplate.Data.csproj", "{203925A5-AD45-48AB-A5E4-6A4DC410476D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CDE5A283-14ED-4DAD-8BC3-CE57073A305E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{AE08CB20-BEF3-42CD-A4A6-781F1AD9277B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrainingTemplate.DataProviders", "WebTrainingTemplate.DataProviders\WebTrainingTemplate.DataProviders.csproj", "{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{203925A5-AD45-48AB-A5E4-6A4DC410476D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{203925A5-AD45-48AB-A5E4-6A4DC410476D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{203925A5-AD45-48AB-A5E4-6A4DC410476D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38F3E8CD-61AE-4AB8-B1C6-F385E62C4550} = {CDE5A283-14ED-4DAD-8BC3-CE57073A305E}
+		{203925A5-AD45-48AB-A5E4-6A4DC410476D} = {AE08CB20-BEF3-42CD-A4A6-781F1AD9277B}
+		{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0} = {AE08CB20-BEF3-42CD-A4A6-781F1AD9277B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1A04670-C7A0-4BB8-B9C3-12D27A122F75}
