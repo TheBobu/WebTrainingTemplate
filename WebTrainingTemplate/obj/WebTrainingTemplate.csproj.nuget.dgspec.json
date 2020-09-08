@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {}
+    "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {}
   },
   "projects": {
-    "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {
+    "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
+        "projectUniqueName": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
         "projectName": "WebTrainingTemplate",
-        "projectPath": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
-        "packagesPath": "C:\\Users\\Ionela\\.nuget\\packages\\",
-        "outputPath": "D:\\Training\\Repositories\\WebTrainingTemplate\\WebTrainingTemplate\\obj\\",
+        "projectPath": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\WebTrainingTemplate.csproj",
+        "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories\\Template\\WebTrainingTemplate\\WebTrainingTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ionela\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
