@@ -4,7 +4,8 @@ using System.Text;
 
 namespace WebTrainingTemplate.DataProviders.src.Services
 {
-    public class DataProvider : IDataProvider
+    public class EntityProvider : IEntityProvider
     {
+
     }
 }
