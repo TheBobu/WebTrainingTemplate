@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate", "WebTrainingTemplate\WebTrainingTemplate.csproj", "{38F3E8CD-61AE-4AB8-B1C6-F385E62C4550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate.Web", "WebTrainingTemplate\WebTrainingTemplate.Web.csproj", "{38F3E8CD-61AE-4AB8-B1C6-F385E62C4550}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate.Data", "WebTrainingTemplate.Data\WebTrainingTemplate.Data.csproj", "{203925A5-AD45-48AB-A5E4-6A4DC410476D}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{AE08
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrainingTemplate.DataProviders", "WebTrainingTemplate.DataProviders\WebTrainingTemplate.DataProviders.csproj", "{1124F4B0-3A9F-4CF1-B231-364AD0AB21E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrainingTemplate.Dtos", "WebTrainingTemplate.Dtos\WebTrainingTemplate.Dtos.csproj", "{3DD725A5-B3F2-4391-99A0-19519C06C54D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrainingTemplate.Dto", "WebTrainingTemplate.Dtos\WebTrainingTemplate.Dto.csproj", "{3DD725A5-B3F2-4391-99A0-19519C06C54D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE5A014E-F1C4-4333-8D9F-0B8B35CF88D1}"
 EndProject
