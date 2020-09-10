@@ -10,6 +10,6 @@ namespace WebTrainingTemplate.Web.ViewModels
     {
         public int CurrentPage { get; set; }
         public int NrOfPages { get; set; }
-        public List<EntityCreateDto> Entities { get; set; }
+        public IEnumerable<EntityListDto> Entities { get; set; }
     }
 }

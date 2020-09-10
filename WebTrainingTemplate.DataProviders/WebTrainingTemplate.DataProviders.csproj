@@ -11,10 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebTrainingTemplate.Data\WebTrainingTemplate.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Managers\" />
+    <ProjectReference Include="..\WebTrainingTemplate.Dtos\WebTrainingTemplate.Dto.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using WebTrainingTemplate.DataProviders.Managers.Interfaces;
 using WebTrainingTemplate.Web.ViewModels;
 
 namespace WebTrainingTemplate.Web.Controllers
@@ -17,21 +18,21 @@ namespace WebTrainingTemplate.Web.Controllers
 
         private const int nrOfItemsOnPage = 10;
 
-       // private readonly IEntityManager EntityManager;
-        private readonly IHtmlHelper htmlHelper;
+        private readonly IEntityManager _entityManager;
+        private readonly IHtmlHelper _htmlHelper;
 
-        public EntityController(/*IEntityManager EntityManager,*/ IHtmlHelper htmlHelper)
+        public EntityController(IEntityManager entityManager, IHtmlHelper htmlHelper)
         {
-           // this.EntityManager = EntityManager;
-            this.htmlHelper = htmlHelper;
+            this._entityManager = entityManager;
+            this._htmlHelper = htmlHelper;
         }
 
         [Route("Entity/List/{page?}")]
         public IActionResult List(int page = 1, string info = "")
         {
             EntityListViewModel EntityListViewModel = new EntityListViewModel();
-           // EntityListViewModel.Entities = EntityManager.GetRange(nrOfItems, page, info);
-           // EntityListViewModel.NrOfPages = (int)Math.Ceiling((decimal)EntityManager.GetNumberOfEntitys(info) / nrOfItems);
+            EntityListViewModel.Entities = _entityManager.GetRange(nrOfItemsOnPage, page, info);
+            EntityListViewModel.NrOfPages = (int)Math.Ceiling((decimal)_entityManager.GetNumberOfEntities(info) / nrOfItemsOnPage);
             EntityListViewModel.CurrentPage = page;
 
             ViewBag.info = info;
@@ -52,8 +53,8 @@ namespace WebTrainingTemplate.Web.Controllers
             var Entity = EntityViewModel.Entity;
             if (ModelState.IsValid)
             {
-              //  int EntityId = EntityManager.Insert(Entity);
-               // return RedirectToAction("Details", new { id = EntityId });
+                int EntityId = _entityManager.Create(Entity);
+                return RedirectToAction("Details", new { id = EntityId });
             }
 
             return RedirectToAction("Insert");
@@ -62,7 +63,7 @@ namespace WebTrainingTemplate.Web.Controllers
         public IActionResult Details(int id)
         {
             EntityDetailsViewModel EntityDetailsViewModel = new EntityDetailsViewModel();
-           // EntityDetailsViewModel.Entity = EntityManager.GetById(id);
+            EntityDetailsViewModel.Entity = _entityManager.GetById(id);
 
             if (EntityDetailsViewModel.Entity == null)
             {
@@ -74,14 +75,14 @@ namespace WebTrainingTemplate.Web.Controllers
 
         public IActionResult Delete(int id)
         {
-           // EntityManager.Delete(id);
+            _entityManager.Delete(id);
             return RedirectToAction("List");
         }
 
         public IActionResult Update(int id)
         {
             EntityUpdateViewModel EntityUpdateViewModel = new EntityUpdateViewModel();
-           // EntityUpdateViewModel.Entity = EntityManager.GetById(id);
+            EntityUpdateViewModel.Entity = _entityManager.GetById(id);
 
             if (EntityUpdateViewModel.Entity == null)
             {
@@ -98,8 +99,8 @@ namespace WebTrainingTemplate.Web.Controllers
 
             if (ModelState.IsValid)
             {
-               // var EntityId = EntityManager.Update(Entity);
-               // return RedirectToAction("Details", new { id = EntityId });
+                var EntityId = _entityManager.Update(Entity);
+                return RedirectToAction("Details", new { id = EntityId });
             }
 
             return View(EntityUpdateViewModel);

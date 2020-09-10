@@ -1,5 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model WebTrainingTemplate.Web.ViewModels.EntityUpdateViewModel
 @{
+    ViewData["Title"] = "Update Entity";
+}
+
+@*
+    /// <summary>
+    /// Template for Update form for Entity
+    /// It has inputs for all EntityCreateDto and a save button
+    /// </summary>
+*@
+
+<h2>Add a new Entity</h2>
+
+<div class="panel panel-default">
+    <form asp-action="Insert" method="post" class="bold-form">
+        <input asp-for="@Model.Entity.EntityId" type="hidden" />
+        @*
+        //This creates automatically text inputs for all properties that are not enums in Model.Entity
+        //For those, they have to be done manually
+        //They are put in the order that they are in Model.Entity
+        *@
+        @foreach (var property in Model.Entity.GetType().GetProperties().Where(p => !p.PropertyType.IsEnum && (nameof(p.Name) != "EntityId")))
+        {
+            <div class="form-group">
+                @Html.Label(nameof(Model.Entity) + "." + property.Name, property.Name, new { @class = "control-label" })
+                @Html.Editor(nameof(Model.Entity) + "." + property.Name, property.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessage(nameof(Model.Entity) + "." + property.Name, "", new { @class = "text-danger" })
+            </div>
+        }
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScripts" />
 }

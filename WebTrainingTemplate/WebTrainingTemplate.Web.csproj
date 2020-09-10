@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebTrainingTemplate.DataProviders\WebTrainingTemplate.DataProviders.csproj" />
     <ProjectReference Include="..\WebTrainingTemplate.Dtos\WebTrainingTemplate.Dto.csproj" />
   </ItemGroup>
 
